@@ -1,0 +1,61 @@
+:root {
+    --clr-prim: rgb(54, 122, 199);
+    --clr-ligh: #f4f4f4;
+    --clr-dark: #333;
+    --clr-warning: rgb(99, 36, 36);
+}
+
+
+*,
+*::before,
+*::after {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: var(--clr-prim);
+    color: var(--clr-ligh);
+    display: grid;
+    grid: 
+        "header header header header"auto
+        "...... lists  active ......"auto /
+        1fr minmax(100px, 300px) minmax(250px, 500px) 1fr
+}
+
+.title {
+    grid-area: header;
+    text-align: center;
+    font-weight: 900;
+    font-size: calc(7vh + 2rem);
+    color: rgba(0, 0, 0, 0.125);
+    letter-spacing: 1px;
+    margin: -0.1em 0 0.5em;
+}
+
+.all-tasks {
+    grid-area: lists;
+}
+
+.todo-list {
+    grid-area: active;
+}
+
+.task-list {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
+    padding-left: 1.1em;
+}
+
+.active-list {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
