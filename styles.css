@@ -1,6 +1,6 @@
 :root {
     --clr-prim: rgb(54, 122, 199);
-    --clr-ligh: #f4f4f4;
+    --clr-light: #f4f4f4;
     --clr-dark: #333;
     --clr-warning: rgb(99, 36, 36);
 }
@@ -22,7 +22,7 @@ body {
     font-weight: 300;
     font-size: 1.5rem;
     background-color: var(--clr-prim);
-    color: var(--clr-ligh);
+    color: var(--clr-light);
     display: grid;
     grid: 
         "header header header header"auto
@@ -70,6 +70,8 @@ form {
 .btn.delete {
     font-weight: 700;
     letter-spacing: 1px;
+    position: relative;
+    bottom: -5px;
     opacity: 0.7;
     font-size: 1rem;
     transition: color 200ms;
@@ -140,7 +142,7 @@ form {
     --spacer: 2rem;
     
     grid-area: active;
-    background: var(--clr-ligh);
+    background: var(--clr-light);
     color: var(--clr-dark);
 }
 
@@ -246,5 +248,5 @@ form {
     width: 100%;
     left: 0;
     bottom: -25px;
-    color: var(--clr-ligh);
+    color: var(--clr-light);
 }
